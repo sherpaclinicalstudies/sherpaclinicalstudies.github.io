@@ -19,14 +19,21 @@ p {
   color: #26a69a;
 }
 
-#survey-container {
-  min-height: 800px;
-  overflow: hidden;
-  height: 800px;
-}
+@media (min-width:1080px) {
 
-.survey-container {
-  height: 800px;
+  #survey-container {
+    min-height: 800px;
+    overflow: hidden;
+    height: 800px;
+  }
+
+  .survey-container {
+    height: 800px;
+  }
+
+  .survey-mobile {
+    display: none;
+  }
 }
 
 .parallax-container {
@@ -39,13 +46,16 @@ p {
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1080px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
   #index-banner .section {
     top: 10%;
+  }
+  .survey-desktop {
+    display: none;
   }
 }
 
