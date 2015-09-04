@@ -8,3 +8,4 @@ The main content can be found in [index.html](index.html).  Custom CSS in [style
 
 Visitors who sign up for the mailing list are persisted to [Parse](http://parse.com) via the custom JS in [main.js](js/main.js).
 
+Before updating, be sure website renders well in desktop, table, and mobile views.  This can be done with [Google Chrome Device Mode](https://developer.chrome.com/devtools/docs/device-mode).
