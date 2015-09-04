@@ -1,6 +1,6 @@
 # sherpaclinicalstudies.com
 
-The website is powered by [GitHub Pages](https://pages.github.com/) which uses [Jekyll](http://jekyllrb.com/) in the backend.  To run locally, clone the rep, install Jekyll, and run via `jekyll serve`.
+The website is powered by [GitHub Pages](https://pages.github.com/) which uses [Jekyll](http://jekyllrb.com/) in the backend.  To run locally, clone the repo, install Jekyll, and run via `jekyll serve`.
 
 It is using [Materialize CSS](http://materializecss.com/) as a base CSS framework to provide responsiveness in mobile.
 
