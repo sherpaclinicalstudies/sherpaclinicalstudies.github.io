@@ -12,7 +12,10 @@ body {
 }
 
 
-
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
 
 a:hover {
   text-decoration: none;
@@ -207,12 +210,138 @@ section h2 {
 }
 
 
+.section-admin h3 {
+  color: #ef7c4b;
+}
+.section-admin p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+section.padded.section-faq {
+  padding: 6em 0 8em;
+}
+.section-faq h2 {
+  margin-bottom: 2.5em;
+}
 .section-faq p {
   font-size: 1.1em;
   line-height: 1.6;
 }
 
 
+section.padded.section-cta {
+  padding: 8em 0;
+}
+.white-rounded-bg {
+  position: relative;
+  background: #fff;
+  padding: 4em 4em;
+  border-radius: 10px;
+}
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 0 2em;
+}
+.white-rounded-bg h3 {
+  font-size: 1.1em;
+  color: #2bd2f9;
+}
+.white-rounded-bg p {
+  font-size: 1.5em;
+}
+.input-group {
+  display: table;
+  width: 100%;
+}
+.white-rounded-bg input[type="text"]{
+  display: table-cell;
+  border-collapse: separate;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  outline: 0;
+  height: 60px;
+  padding-left: 20px;
+  line-height: normal;
+  vertical-align: middle;
+  border: none;
+  border-radius: 8px;
+  background: #e2dddb;
+  transition: all 200ms linear;
+}
+.white-rounded-bg input[type="text"]:focus {
+  background: #eeebe9;
+}
+
+.input-btn {
+  display: table-cell;
+  border-collapse: separate;
+  font-size: 0px;
+  letter-spacing: 0.14px;
+  line-height: 0px;
+  position: relative;
+  right: 0px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 3px;
+}
+.input-btn button {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  background: #2bd2f9;
+  letter-spacing: 0.05em;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  margin-left: -1px;
+  margin-right: 5px;
+  width: 120px;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 200ms ease-in-out;
+}
+.input-btn button:hover {
+  background: #209ebb;
+}
+
+
+
+
+
+footer {
+  background: #16697d;
+  color: #fff;
+  margin: 0;
+  padding: 5em 0;
+}
+footer h5 {
+  letter-spacing: 0.05em;
+}
+footer h5.copyright {
+  color: #a2c3cb;
+}
+footer h5.contact {
+  color: #0b353f;
+}
+footer a {
+  color: #73a5b1;
+}
+footer a:hover {
+  color: #abc9d0;
+}
 
 
 
@@ -234,12 +363,6 @@ section h2 {
     display: none;
   }
 }
-
-
-
-
-
-
 
 
 
@@ -265,6 +388,4 @@ section h2 {
   font-size: inherit;
 }
 
-footer.page-footer {
-  margin: 0;
-}
+
