@@ -5,93 +5,301 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Sherpa Clinical</title>
 
+  <!-- FONTS: Open Sans  -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet' type='text/css'>
+
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Sherpa Clinical</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Making Connections to Power New Treatments</h5>
-          <h5 class="header col s12 light">Our goal is to improve the health of patients and advance medical science by connecting people with clinical studies and researchers</h5>
-        </div>
-        <br><br>
 
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="Sherpa Clinical Studies"></div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 m6 ">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">person</i></h2>
-            <h5 class="center">For Patients</h5>
-            <p class="light">Help us understand how to improve your or your loved one's access to new treatments.</p>
-            <p class="light">Time commitment: 5 Minutes</p>
-            <button class="survey-desktop" id="surveyButton">Tell us a little bit about yourself</button>
-            <div class="survey-mobile"><a href="https://wharton.qualtrics.com/SE/?SID=SV_efB3dnNTL6JjHAV" target="_blank">Click Here to Take Our Patient Survey</a></div>
-            <p class="light">We would sincerely appreciate your participation in this survey, which is part of a research effort to understand how to improve patient access to clinical studies. Your responses will be kept completely confidential and will only be shared in aggregate form. No individual respondents will be identified.</p>
+  <div class="jumbotron">
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/sherpa-clinical-logo.svg" class="logo" height="32" alt="Sherpa Clinical Logo">
           </div>
-        </div>
-
-        <div class="col s12 m6 ">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">For Clinical Researchers</h5>
-            <p class="light">Let us help connect with patients interested in clinical studies. Sign up to learn more, and receive an invitation to our service when launched.</p>
-              <input id="mailingListEmail" type="text" placeholder="Email"/>
-              <button id="mailingListSignUp">Sign up</button>
+          <div class="col-sm-8 sub-title">
+            <h2>Making Connections to Power New Treatments</h2>
+            <a class="email hidden-sm hidden-xs" href="mailto:info@sherpaclinicalstudies.com">
+              <img src="images/email-icon.svg" width="20" height="14" alt="Email Icon"> EMAIL US
+            </a>
+          </div>
+      </header>
+      <div class="hero">
+        <div class="row">
+          <div class="col-sm-7">
+            <h1>Connecting clinical studies and researchers with quality referrals</h1>
+            <p>
+              Sherpa Clinical uses modern marketing strategies <br>to help you get high quality referrals, faster.
+            </p>
+            <a class="learn" href="#">LEARN MORE <span>></span></a>
+          </div>
+          <div class="col-sm-5 text-right hidden-xs">
+            <img src="images/doc.png">
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
-  <div id="survey-container" class="parallax-container blue survey-container valign-wrapper survey-desktop">
-    <div class="section no-pad-bot survey-container">
-      <div class="container survey-container">
-        <div class="row center">
-          <h5 class="header col s12 light survey-desktop">Take Our Patient Survey</h5>
-        </div>
-        <div class="survey-container">
-          <center><iframe width="1000" height="800" src="https://wharton.qualtrics.com/SE/?SID=SV_efB3dnNTL6JjHAV" scrolling="yes" frameborder="0"></iframe></center>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <footer class="page-footer white">
+  <section class="padded section-benefits">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5>Contact Us</h5>
-          <p class="text-lighten-4">Patients</p>
-          <p class="text-lighten-4"><a href="mailto:patients@sherpaclinicalstudies.com">patients@sherpaclinicalstudies.com</a></p>
-          <p class="text-lighten-4">Clinical Study Sponsors</p>
-          <p class="text-lighten-4"><a href="mailto:sponsors@sherpaclinicalstudies.com">sponsors@sherpaclinicalstudies.com</a></p>
-          <p class="text-lighten-4">All Other Inquiries</p>
-          <p class="text-lighten-4"><a href="mailto:info@sherpaclinicalstudies.com">info@sherpaclinicalstudies.com</a></p>
+        <div class="col-xs-12 text-center">
+          <h2>Sherpa Clinical: Fixing clinical trial enrollment</h2>
+        </div>
+      </div>
+
+      <div class="benefits-wrap">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-md-offset-1 text-center">
+            <h3>80%</h3>
+            <h5>Of trial sites fail to meet patient enrollment</h5>
+          </div>
+          <div class="col-sm-6 col-md-5">
+            <h4>SOLVING YOUR UNDER ENROLLMENT</h4>
+            <p>
+              Failure to enroll necessary number of patients at each investigator site in a timely manner can compromise a trial’s statistical power and scientific validity. Trial delays prolong the time it takes to make new therapies available to patients in need.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="content-break"></div>
+      </div>
+
+      <div class="benefits-wrap">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-md-offset-1 text-center">
+            <h3>$40k<span>per day</span></h3>
+            <h5>Delays are a very costly part of clinical research</h5>
+          </div>
+          <div class="col-sm-6 col-md-5">
+            <h4>IMPROVING YOUR FINANCIALS</h4>
+            <p>
+              Delays also add to life sciences companies’ real and opportunity costs. Each day of delay can translate into ~$40K in real cost and ~$2.5M in opportunity cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="padded light-bg section-process">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>Sherpa Clinical: Technology-enabled marketing</h2>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="top" style="background: #16697d">
+              <div class="number">
+                1
+              </div>
+              <div class="text">
+                Generate Leads
+              </div>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Social Networks</li>
+                <li>Search Marketing</li>
+                <li>Content Websites</li>
+                <li>Advocacy Organizations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="top" style="background: #209ebb">
+              <div class="number">
+                2
+              </div>
+              <div class="text">
+                Pre-Screening
+              </div>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Trustworth, Friendly Site</li>
+                <li>Study Goals & Patient Req.</li>
+                <li>Online Questionnaire</li>
+                <li>Phone & Video Screening</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="top">
+              <div class="number">
+                3
+              </div>
+              <div class="text">
+                Eligible Referrals
+              </div>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Collaborate with sites to obtain IRB approval for patient communications</li>
+                <li>Ensure follow ups, schedule appointments, and arrange travel via Uber</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="top" style="background: #55dbfa">
+              <div class="number">
+                4
+              </div>
+              <div class="text">
+                Track & Report
+              </div>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>Detailed real-time lead & referral tracking</li>
+                <li>Site performance metrics</li>
+                <li>Track and minimize cost per referral</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="padded section-admin">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="images/sherpa-dashboard.jpg" alt="Sherpa Clinical Dashboard">
+        </div>
+        <div class="col-md-4 mt-4">
+          <h3>REAL-TIME TRACKING</h3>
+          <p>
+            Know up to the minute how well your referral campaign is doing. Our dashboard gives you detailed analytics on leads and referrals.
+          </p>
+          <br>
+          <h3>BUDGET OPTIMIZATION</h3>
+          <p>Identify the highest yield advertising methods and re-arrange your budget accordingly.</p>
+          <br>
+          <h3>SITE PERFORMANCE</h3>
+          <p>Evaluate the highest and lowest performing investigator sites to refocus efforts on building a balanced clinical trial.</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="container">
+    <div class="row text-center">
+      <div class="content-break"></div>
+    </div>
+  </section>
+
+  <section class="padded section-faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h2>Frequently asked questions</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h3>What makes Sherpa Clinical unique?</h3>
+          <p>
+            Most sponsors continue to rely on traditional mass advertising—billboards, magazines, and radio advertisments. Yet the costs and effectiveness are sub-par. Unfortunately 70% of the possible patient population never hears about the trials which reveals how ineffective traditional advertisting is.
+          </p>
+          <p>
+            At Sherpa Clinical, we use modern marketing strategies to not only specifically target your ideal patient group, but also to use real-time metrics and continually update how and where to target your budget.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3>Why go online, our process has worked in the past?</h3>
+          <p>
+            Patients increasingly are empowered and searching online. 59% of patients go to the Internet to research a health concern before talking to another person. 72% of patients are willing to be contacted to participate in clinical research. 81% of patients are willing to provide health information to participate in observational research.
+          <p>
+            Beyond the current stats, all of the high quality marketing channels are moving online. The growth in the amount of time people spend online is rising at a rapid pace, which makes this an ideal time to start marketing online.
+          </p>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3>What's your team's expertise?</h3>
+          <p>
+            We're made up of digital marketing experts who've helped grow and advise some of the biggest technology companies in the country. Beyond marketing we understand business, design and technology to build some amazing tools for you to push your referral campaigns further.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3>What about HIPAA, Security and Insurance?</h3>
+          <p>
+            We take privacy very seriously. All information shared by patients will be transmitted and stored in a secure, HIPAA-compliant way. We require sponsors to have clinical trial insurance which will cover any liability related to the in-person pre-screening and the trial itself.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="padded light-bg section-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="white-rounded-bg">
+            <div class="table">
+              <div class="table-cell">
+                <h3>READY FOR FASTER, CHEAPER RECRUITMENT?</h3>
+                <p>
+                  Let us help connect you with patients interested in clinical studies. Sign up to learn more, and receive an invitation to our service when launched.
+                </p>
+              </div>
+              <div class="table-cell">
+                <div class="input-group">
+                  <input id="mailingListEmail" type="text" placeholder="Enter Your Email" />
+                  <span class="input-btn">
+                    <button id="mailingListSignUp">SIGN UP</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/sherpa-clinical-logo.svg" height="32" alt="Sherpa Clinical Logo">
+          <h5 class="copyright">© 2015 SHERPA CLINICAL STUDIES</h5>
+        </div>
+        <div class="col-sm-offset-4 col-sm-4">
+          <h5 class="contact">CONTACT US</h5>
+          <p>Patients<br>
+          <a href="mailto:patients@sherpaclinicalstudies.com">patients@sherpaclinicalstudies.com</a></p>
+          <p>Clinical Study Sponsors<br>
+          <a href="mailto:sponsors@sherpaclinicalstudies.com">sponsors@sherpaclinicalstudies.com</a></p>
+          <p>All Other Inquiries<br>
+          <a href="mailto:info@sherpaclinicalstudies.com">info@sherpaclinicalstudies.com</a></p>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
-  <script src="js/materialize.min.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/parse-1.5.0.min.js"></script>
   <script src="js/main.js"></script>
 
   </body>

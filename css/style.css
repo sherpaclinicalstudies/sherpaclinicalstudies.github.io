@@ -6,72 +6,547 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #676362;
 }
+
+
+
+/*------------------------
+  Global Styles
+-------------------------*/
 
 p {
-  line-height: 2rem;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
-.button-collapse {
-  color: #26a69a;
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
 }
 
-@media (min-width:1080px) {
-
-  #survey-container {
-    min-height: 800px;
-    overflow: hidden;
-    height: 800px;
-  }
-
-  .survey-container {
-    height: 800px;
-  }
-
-  .survey-mobile {
-    display: none;
-  }
+img {
+  max-width: 100%;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
 
-@media only screen and (max-width : 1080px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-  .survey-desktop {
-    display: none;
-  }
+
+/*------------------------
+  Helpers
+-------------------------*/
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+
+
+/*------------------------
+  Header (Navigation)
+-------------------------*/
+
+header {
+  padding-top: 3em;
+}
+header img.logo {
+  margin-top: 7px;
+}
+header .sub-title {
+  text-align: right;
+}
+header h2 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.1em;
+}
+header a.email {
+  display: inline-block;
+  color: rgba(22, 105, 125, 0.7);
+  background: rgba(255, 255, 255, 0.7);
+  margin-left: 14px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 10px 20px;
+  transition: all 200ms ease-in-out;
+}
+header a.email img {
+  margin-top: -2px;
+  opacity: 0.7;
+  transition: all 200ms ease-in-out;
+}
+header a.email:hover {
+  color: rgba(22, 105, 125, 1);
+}
+header a.email:hover img {
+  opacity: 1;
 }
 
-.icon-block {
-  padding: 0 15px;
+
+
+/*------------------------
+  Jumbotron (Cover)
+-------------------------*/
+
+.jumbotron {
+  min-height: 600px;
+  background: #2bd2f9;
+  overflow: hidden;
 }
-.icon-block .material-icons {
-  font-size: inherit;
+.jumbotron h1 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 300;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+.jumbotron p {
+  color: #16697d;
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-top: 0.6em;
+}
+.jumbotron a.learn {
+  display: inline-block;
+  color: #fff;
+  background: #16697d;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 18px 36px;
+  margin-top: 2em;
+}
+.jumbotron a.learn span {
+  display: block;
+  float: right;
+  font-family: monospace;
+  margin-left: 14px;
+  transition: all 300ms ease-in-out;
+  -webkit-transform: translate3d(5px, -1px, 0) scale(1.3);
+}
+.jumbotron a.learn:hover {
+  text-decoration: none;
+}
+.jumbotron a.learn:hover span {
+  -webkit-transform: translate3d(8px, -1px, 0) scale(1.4);
+}
+.hero img {
+  height:490px;
+  position: absolute;
+  left: 15%;
+  top: 30px;
 }
 
-footer.page-footer {
+
+
+/*------------------------
+  Section Globals
+-------------------------*/
+
+section.padded {
+  padding: 5em 0;
+}
+section.light-bg {
+  background: #f5f4f3;
+}
+section h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #676362;
+  margin-bottom: 1.5em;
+}
+.content-break {
+  display: inline-block;
+  background: #e2dddb;
+  height: 3px;
+  width: 160px;
+}
+
+
+/*------------------------
+  Section Benefits
+-------------------------*/
+
+.benefits-wrap {
+  margin: 4em 0;
+}
+.section-benefits h3 {
+  color: #ef7c4b;
+  font-size: 7em;
+  line-height: 1;
+  margin: 0 0 0.1em 0;
+}
+.section-benefits h3 span {
+  font-size: 0.2em;
+  margin-left: 6px;
+}
+.section-benefits h5 {
+  color: #ef7c4b;
+  font-size: 1.1em;
   margin: 0;
 }
+.section-benefits h4 {
+  color: #2bd2f9;
+  font-size: 1.2em;
+  margin: 0;
+}
+.section-benefits p {
+  line-height: 1.8;
+}
+
+
+
+/*------------------------
+  Section Process
+-------------------------*/
+
+.section-process .wrapper {
+  margin: 3em 0 3em;
+}
+.section-process .top {
+  text-align: center;
+  height: 180px;
+  background: #2bd2f9;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.section-process .top .number {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  color: #ef7c4b;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: 800;
+  top: 40px;
+}
+.section-process .top .text {
+  position: relative;
+  top: 65px;
+  font-size: 1.5em;
+}
+.section-process .bottom {
+  text-align: center;
+  height: 190px;
+  background: #fff;
+  color: inherit;
+  padding: 2em 0.5em 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.section-process .bottom ul {
+  margin: 0;
+  padding-left: 2.5em;
+  text-align: left;
+}
+.section-process .bottom li {
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+
+
+
+/*------------------------
+  Section Admin
+-------------------------*/
+
+
+.section-admin .mt-4 {
+  margin-top: 4em;
+}
+.section-admin h3 {
+  color: #ef7c4b;
+}
+.section-admin p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+
+/*------------------------
+  Section FAQ
+-------------------------*/
+
+section.padded.section-faq {
+  padding: 6em 0 8em;
+}
+.section-faq h2 {
+  margin-bottom: 2.5em;
+}
+.section-faq p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+
+/*------------------------
+  Section CTA
+-------------------------*/
+
+section.padded.section-cta {
+  padding: 8em 0;
+}
+.white-rounded-bg {
+  position: relative;
+  background: #fff;
+  padding: 4em 4em;
+  border-radius: 10px;
+}
+.table {
+  display: table;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 0 2em;
+}
+.white-rounded-bg h3 {
+  font-size: 1.1em;
+  color: #2bd2f9;
+}
+.white-rounded-bg p {
+  font-size: 1.5em;
+}
+.input-group {
+  display: table;
+  width: 100%;
+}
+.white-rounded-bg input[type="text"]{
+  display: table-cell;
+  border-collapse: separate;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  outline: 0;
+  height: 60px;
+  padding-left: 20px;
+  line-height: normal;
+  vertical-align: middle;
+  border: none;
+  border-radius: 8px;
+  background: #e2dddb;
+  transition: all 200ms linear;
+}
+.white-rounded-bg input[type="text"]:focus {
+  background: #eeebe9;
+}
+
+.input-btn {
+  display: table-cell;
+  border-collapse: separate;
+  font-size: 0px;
+  letter-spacing: 0.14px;
+  line-height: 0px;
+  position: relative;
+  right: 0px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 3px;
+}
+.input-btn button {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  background: #2bd2f9;
+  letter-spacing: 0.05em;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  margin-left: -1px;
+  margin-right: 5px;
+  width: 120px;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 200ms ease-in-out;
+}
+.input-btn button:hover {
+  background: #209ebb;
+}
+
+
+
+/*------------------------
+  Section CTA
+-------------------------*/
+
+footer {
+  background: #16697d;
+  color: #fff;
+  margin: 0;
+  padding: 7em 0 6em;
+}
+footer h5 {
+  letter-spacing: 0.07em;
+}
+footer h5.copyright {
+  color: #a2c3cb;
+}
+footer h5.contact {
+  color: #0b353f;
+  margin-top: 0;
+}
+footer a {
+  color: #73a5b1;
+  transition: all 200ms ease-in-out;
+}
+footer a:hover {
+  color: #abc9d0;
+}
+
+
+
+/*------------------------
+  Medium Devices
+  (992px - 1199px)
+-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .jumbotron h1 {
+    font-size: 2.6em;
+  }
+
+  .section-process .bottom {
+    height: 190px;
+    padding: 1.5em 0.5em 0;
+  }
+  .section-process .bottom ul {
+    padding-left: 2em;
+  }
+
+  .section-admin .mt-4 {
+    margin-top: 1em;
+  }
+  .section-admin img {
+    position: relative;
+    left: -8%;
+    width: 110%;
+    max-width: 110%;
+  }
+
+}
+
+
+
+/*------------------------
+  Small Devices
+  (768px - 991px)
+-------------------------*/
+@media (max-width: 991px) {
+  body {
+    font-size: 13px;
+  }
+
+
+  .jumbotron {
+    min-height: 540px;
+  }
+  .jumbotron h1 {
+    font-size: 2.4em;
+  }
+  .jumbotron p {
+    font-size: 1.3em;
+  }
+  .jumbotron a.learn {
+    font-size: 1em;
+  }
+  .hero img {
+    height: 435px;
+    left: 10%;
+  }
+
+  section.padded.section-process {
+    padding-bottom: 2em;
+  }
+  .section-process .bottom {
+    margin-bottom: 2em;
+  }
+
+  .section-faq h2 {
+    margin-bottom: 1em;
+  }
+  .section-faq h3 {
+    margin-top: 3em;
+  }
+
+  .table-cell {
+    display: block;
+    width: 100%;
+  }
+  .input-group {
+    margin-top: 3em;
+  }
+}
+
+
+/*------------------------
+  Mobile Devices
+  (767px)
+-------------------------*/
+@media (max-width: 767px) {
+
+  header .sub-title {
+    text-align: left;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.6em;
+    margin-top: 1.4em;
+  }
+
+  .section-benefits h4 {
+    margin-top: 3em;
+    text-align: center;
+  }
+
+  .section-process .bottom {
+    padding: 2em 1em 0;
+  }
+  .section-process .bottom li {
+    font-size: 1.15em;
+  }
+
+  .section-admin img {
+    position: relative;
+    max-width: 110%;
+    left: -5%;
+  }
+
+  .white-rounded-bg {
+    padding: 3em 1.4em;
+  }
+  footer h5.contact {
+    margin-top: 3em;
+  }
+
+}
+
+
+
+
+
+
+
+
