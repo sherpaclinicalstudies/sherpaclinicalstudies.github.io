@@ -17,7 +17,9 @@ p {
   line-height: 1.6;
 }
 
-a:hover {
+a:hover,
+a:visited,
+a:focus {
   text-decoration: none;
 }
 .text-center {
@@ -37,7 +39,9 @@ img {
 header {
   padding-top: 3em;
 }
-
+header img.logo {
+  margin-top: 7px;
+}
 header h2 {
   display: inline-block;
   font-size: 1em;
@@ -55,8 +59,19 @@ header a.email {
   font-weight: 700;
   letter-spacing: 0.05em;
   padding: 10px 20px;
+  transition: all 200ms ease-in-out;
 }
-
+header a.email img {
+  margin-top: -2px;
+  opacity: 0.7;
+  transition: all 200ms ease-in-out;
+}
+header a.email:hover {
+  color: rgba(22, 105, 125, 1);
+}
+header a.email:hover img {
+  opacity: 1;
+}
 
 
 .jumbotron {
@@ -193,19 +208,21 @@ section h2 {
 }
 .section-process .bottom {
   text-align: center;
-  height: 180px;
+  height: 190px;
   background: #fff;
   color: inherit;
-  padding: 2em 0 0;
+  padding: 2em 0.5em 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 .section-process .bottom ul {
   margin: 0;
+  padding-left: 2.5em;
   text-align: left;
 }
 
 .section-process .bottom li {
+  margin-left: 0;
   margin-bottom: 1em;
 }
 
@@ -325,19 +342,21 @@ footer {
   background: #16697d;
   color: #fff;
   margin: 0;
-  padding: 5em 0;
+  padding: 7em 0 6em;
 }
 footer h5 {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
 }
 footer h5.copyright {
   color: #a2c3cb;
 }
 footer h5.contact {
   color: #0b353f;
+  margin-top: 0;
 }
 footer a {
   color: #73a5b1;
+  transition: all 200ms ease-in-out;
 }
 footer a:hover {
   color: #abc9d0;
@@ -381,11 +400,5 @@ footer a:hover {
   }
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
 
 
