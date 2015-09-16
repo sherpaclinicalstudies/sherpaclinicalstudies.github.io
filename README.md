@@ -2,7 +2,7 @@
 
 The website is powered by [GitHub Pages](https://pages.github.com/) which uses [Jekyll](http://jekyllrb.com/) in the backend.  To run locally, clone the repo, install Jekyll, and run via `jekyll serve`.
 
-It is using [Materialize CSS](http://materializecss.com/) as a base CSS framework to provide responsiveness in mobile.
+It is using a custom build of [Bootstrap](http://getbootstrap.com/) (just the grid and responsive utilities) for mobile and tablet styling .
 
 The main content can be found in [index.html](index.html).  Custom CSS in [style.css](css/style.css).  Custom JS in [main.js](js/main.js).
 
