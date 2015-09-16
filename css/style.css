@@ -12,6 +12,11 @@ body {
 }
 
 
+
+/*------------------------
+  Global Styles
+-------------------------*/
+
 p {
   font-size: 1.1em;
   line-height: 1.6;
@@ -22,6 +27,17 @@ a:visited,
 a:focus {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+}
+
+
+
+/*------------------------
+  Helpers
+-------------------------*/
+
 .text-center {
   text-align: center;
 }
@@ -30,17 +46,19 @@ a:focus {
 }
 
 
-img {
-  max-width: 100%;
-}
 
-
+/*------------------------
+  Header (Navigation)
+-------------------------*/
 
 header {
   padding-top: 3em;
 }
 header img.logo {
   margin-top: 7px;
+}
+header .sub-title {
+  text-align: right;
 }
 header h2 {
   display: inline-block;
@@ -73,6 +91,11 @@ header a.email:hover img {
   opacity: 1;
 }
 
+
+
+/*------------------------
+  Jumbotron (Cover)
+-------------------------*/
 
 .jumbotron {
   min-height: 600px;
@@ -127,6 +150,10 @@ header a.email:hover img {
 
 
 
+/*------------------------
+  Section Globals
+-------------------------*/
+
 section.padded {
   padding: 5em 0;
 }
@@ -139,8 +166,17 @@ section h2 {
   color: #676362;
   margin-bottom: 1.5em;
 }
+.content-break {
+  display: inline-block;
+  background: #e2dddb;
+  height: 3px;
+  width: 160px;
+}
 
 
+/*------------------------
+  Section Benefits
+-------------------------*/
 
 .benefits-wrap {
   margin: 4em 0;
@@ -166,16 +202,14 @@ section h2 {
   margin: 0;
 }
 .section-benefits p {
-  font-size: 1.1em;
   line-height: 1.8;
 }
-.content-break {
-  display: inline-block;
-  background: #e2dddb;
-  height: 3px;
-  width: 160px;
-}
 
+
+
+/*------------------------
+  Section Process
+-------------------------*/
 
 .section-process .wrapper {
   margin: 3em 0 3em;
@@ -220,13 +254,21 @@ section h2 {
   padding-left: 2.5em;
   text-align: left;
 }
-
 .section-process .bottom li {
   margin-left: 0;
   margin-bottom: 1em;
 }
 
 
+
+/*------------------------
+  Section Admin
+-------------------------*/
+
+
+.section-admin .mt-4 {
+  margin-top: 4em;
+}
 .section-admin h3 {
   color: #ef7c4b;
 }
@@ -235,6 +277,11 @@ section h2 {
   line-height: 1.6;
 }
 
+
+
+/*------------------------
+  Section FAQ
+-------------------------*/
 
 section.padded.section-faq {
   padding: 6em 0 8em;
@@ -247,6 +294,11 @@ section.padded.section-faq {
   line-height: 1.6;
 }
 
+
+
+/*------------------------
+  Section CTA
+-------------------------*/
 
 section.padded.section-cta {
   padding: 8em 0;
@@ -336,7 +388,9 @@ section.padded.section-cta {
 
 
 
-
+/*------------------------
+  Section CTA
+-------------------------*/
 
 footer {
   background: #16697d;
@@ -364,41 +418,135 @@ footer a:hover {
 
 
 
+/*------------------------
+  Medium Devices
+  (992px - 1199px)
+-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
 
-
-@media (min-width:1080px) {
-
-  #survey-container {
-    min-height: 800px;
-    overflow: hidden;
-    height: 800px;
+  .jumbotron h1 {
+    font-size: 2.6em;
   }
 
-  .survey-container {
-    height: 800px;
+  .section-process .bottom {
+    height: 190px;
+    padding: 1.5em 0.5em 0;
+  }
+  .section-process .bottom ul {
+    padding-left: 2em;
   }
 
-  .survey-mobile {
-    display: none;
+  .section-admin .mt-4 {
+    margin-top: 1em;
   }
+  .section-admin img {
+    position: relative;
+    left: -8%;
+    width: 110%;
+    max-width: 110%;
+  }
+
 }
 
 
 
-@media only screen and (max-width : 1080px) {
-  #index-banner .section {
-    top: 10%;
+/*------------------------
+  Small Devices
+  (768px - 991px)
+-------------------------*/
+@media (max-width: 991px) {
+  body {
+    font-size: 13px;
   }
-  .survey-desktop {
-    display: none;
+
+
+  .jumbotron {
+    min-height: 540px;
+  }
+  .jumbotron h1 {
+    font-size: 2.4em;
+  }
+  .jumbotron p {
+    font-size: 1.3em;
+  }
+  .jumbotron a.learn {
+    font-size: 1em;
+  }
+  .hero img {
+    height: 435px;
+    left: 10%;
+  }
+
+  section.padded.section-process {
+    padding-bottom: 2em;
+  }
+  .section-process .bottom {
+    margin-bottom: 2em;
+  }
+
+  .section-faq h2 {
+    margin-bottom: 1em;
+  }
+  .section-faq h3 {
+    margin-top: 3em;
+  }
+
+  .table-cell {
+    display: block;
+    width: 100%;
+  }
+  .input-group {
+    margin-top: 3em;
   }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
+
+/*------------------------
+  Mobile Devices
+  (767px)
+-------------------------*/
+@media (max-width: 767px) {
+
+  header .sub-title {
+    text-align: left;
   }
+
+  .jumbotron h1 {
+    font-size: 2.6em;
+    margin-top: 1.4em;
+  }
+
+  .section-benefits h4 {
+    margin-top: 3em;
+    text-align: center;
+  }
+
+  .section-process .bottom {
+    padding: 2em 1em 0;
+  }
+  .section-process .bottom li {
+    font-size: 1.15em;
+  }
+
+  .section-admin img {
+    position: relative;
+    max-width: 110%;
+    left: -5%;
+  }
+
+  .white-rounded-bg {
+    padding: 3em 1.4em;
+  }
+  footer h5.contact {
+    margin-top: 3em;
+  }
+
 }
+
+
+
+
+
 
 
 
